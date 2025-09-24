@@ -1,0 +1,612 @@
+.frameParent {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px 55px;
+	margin-bottom: 80px;
+	box-sizing: border-box;
+	gap: 40px;
+	text-align: left;
+	font-size: 25.69px;
+	color: #0d0d0d;
+	font-family: 'Inter', sans-serif;
+}
+
+.resultsHeader {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 20px;
+}
+
+.resultsTitle {
+	position: relative;
+	font-size: 125.27px;
+	letter-spacing: -0.05em;
+	font-weight: 800;
+	color: #0d0d0d;
+	line-height: 1.1;
+}
+
+/* Large desktop styles */
+@media (min-width: 1900px) {
+	.frameParent {
+		padding: 0px 55px;
+		margin-bottom: 80px;
+		gap: 40px;
+		font-size: 25.69px;
+	}
+	
+	.resultsTitle {
+		font-size: 125.27px;
+	}
+}
+
+/* Desktop styles */
+@media (max-width: 1899px) and (min-width: 1400px) {
+	.frameParent {
+		padding: 0px 50px;
+		margin-bottom: 70px;
+		gap: 35px;
+		font-size: 24px;
+	}
+	
+	.resultsTitle {
+		font-size: 100px;
+	}
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+	.frameParent {
+		padding: 0px 30px;
+		margin-bottom: 60px;
+		gap: 30px;
+		font-size: 22px;
+	}
+	
+	.resultsTitle {
+		font-size: 80px;
+	}
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+	.frameParent {
+		padding: 0px 20px;
+		margin-bottom: 40px;
+		gap: 25px;
+		font-size: 18px;
+		align-items: center;
+	}
+	
+	.resultsTitle {
+		font-size: 50px;
+	}
+}
+.frameGroup {
+	align-self: stretch;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 0px;
+}
+.instanceParent {
+	height: 59px;
+	display: flex;
+	align-items: flex-start;
+}
+.homeWrapper {
+	border-radius: 60px;
+	background-color: #10110e;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+	height: 59px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 40px;
+	color: #fff;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.homeWrapper:hover {
+	background-color: #fff;
+	color: #10110e;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+.home {
+	position: relative;
+	letter-spacing: -0.01em;
+	font-weight: 500;
+	color: inherit;
+}
+.homeContainer {
+	border-radius: 60px;
+	border: 1px solid #0d0d0d;
+	box-sizing: border-box;
+	height: 59px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 40px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.homeContainer:hover {
+	background-color: #10110e;
+	color: #fff;
+	border: 1px solid #fff;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(16, 17, 14, 0.3);
+}
+.frameContainer {
+	align-self: stretch;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	gap: 14px;
+	font-size: 53px;
+	color: #fff;
+}
+.frameWrapper {
+	width: 450px;
+	border-radius: 20px;
+	height: 411px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	box-sizing: border-box;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.frameWrapper:hover {
+	z-index: 10;
+	position: relative;
+	backdrop-filter: blur(10px);
+	background-position: center top;
+	transform: scale(1.05);
+}
+
+.frameWrapper:hover .petFriendlyPlants {
+	font-size: 32px;
+}
+
+
+/* Стили для уменьшения карточки Мочалова при наведении на другие */
+.frameContainer:hover .frameWrapper:not(:hover) {
+	width: 450px;
+	mix-blend-mode: luminosity;
+}
+
+
+/* Стили для уменьшения новой карточки при наведении на другие */
+.frameWrapper:hover ~ .frameWrapper4,
+.frameWrapper2:hover ~ .frameWrapper4,
+.frameWrapper3:hover ~ .frameWrapper4 {
+	width: 340.5px;
+	mix-blend-mode: luminosity;
+}
+
+
+/* Large desktop styles */
+@media (min-width: 1900px) {
+	.frameWrapper, .frameWrapper2, .frameWrapper3, .frameWrapper4 {
+		width: 450px;
+		height: 411px;
+	}
+	
+	.instanceParent {
+		gap: 40px;
+	}
+}
+
+/* Desktop styles */
+@media (max-width: 1899px) and (min-width: 1400px) {
+	.frameWrapper, .frameWrapper2, .frameWrapper3, .frameWrapper4 {
+		width: 400px;
+		height: 380px;
+	}
+	
+	.instanceParent {
+		gap: 35px;
+	}
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+	.frameWrapper, .frameWrapper2, .frameWrapper3, .frameWrapper4 {
+		width: 100%;
+		max-width: 500px;
+		height: 350px;
+	}
+	
+	.instanceParent {
+		gap: 30px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+	.frameWrapper, .frameWrapper2, .frameWrapper3, .frameWrapper4 {
+		width: 100%;
+		max-width: 400px;
+		height: 300px;
+	}
+	
+	.instanceParent {
+		gap: 25px;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+	.frameWrapper, .frameWrapper2, .frameWrapper3, .frameWrapper4 {
+		width: 100%;
+		max-width: 350px;
+		height: 280px;
+	}
+	
+	.instanceParent {
+		gap: 20px;
+	}
+}
+.frameParent2 {
+	align-self: stretch;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 0px;
+}
+.frameParent3 {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 18px 0px;
+	gap: 35px;
+}
+.petFriendlyPlantsParent {
+	align-self: stretch;
+	height: 120px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	gap: 10px;
+	flex-direction: column;
+}
+.petFriendlyPlants {
+	position: relative;
+	letter-spacing: -0.01em;
+	font-size: 24px;
+	font-weight: 600;
+	color: #000;
+}
+.frameChild {
+	width: 55px;
+	border-radius: 57px;
+	height: 55px;
+	object-fit: contain;
+	transition: transform 0.3s ease;
+}
+.loremIpsumDolorSitAmetCoWrapper {
+	align-self: stretch;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 0px 0px 0px 20px;
+	font-size: 16px;
+}
+.loremIpsumDolor {
+	flex: 1;
+	position: relative;
+	letter-spacing: -0.01em;
+}
+.lineParent {
+	align-self: stretch;
+	height: 89px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	gap: 10px;
+	font-size: 11px;
+	padding: 0 20px 20px 20px;
+	box-sizing: border-box;
+}
+.frameItem {
+	align-self: stretch;
+	position: relative;
+	border-top: 1px solid #b3b3b3;
+	box-sizing: border-box;
+	height: 1px;
+}
+.instanceWrapper {
+	align-self: stretch;
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+	.instanceWrapper {
+		flex-direction: column;
+		gap: 15px;
+		align-items: center;
+	}
+}
+.frameParent4 {
+	backdrop-filter: blur(7px);
+	border-radius: 29px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 0.5px solid #5a5a5a;
+	display: flex;
+	align-items: center;
+	padding: 0px 19px 0px 0px;
+	gap: 4px;
+}
+.instanceChild {
+	width: 44px;
+	border-radius: 47px;
+	height: 44px;
+}
+.piperaceaca {
+	position: relative;
+	letter-spacing: 0.01em;
+	font-weight: 600;
+	color: #000;
+}
+.frameWrapper2 {
+	width: 450px;
+	border-radius: 20px;
+	height: 411px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	box-sizing: border-box;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	mix-blend-mode: luminosity;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.frameWrapper2:hover {
+	z-index: 10;
+	position: relative;
+	mix-blend-mode: normal;
+	backdrop-filter: blur(10px);
+	background-position: center top;
+	transform: scale(1.05);
+}
+
+.frameWrapper2:hover .petFriendlyPlants {
+	font-size: 32px;
+}
+
+.frameWrapper2:hover .frameChild {
+	transform: translateY(-30px);
+}
+
+.frameWrapper2:hover ~ .frameWrapper3 {
+	width: 450px;
+	mix-blend-mode: luminosity;
+}
+
+.frameParent5 {
+	align-self: stretch;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 0px;
+}
+.orchidsWrapper {
+	align-self: stretch;
+	height: 120px;
+	display: flex;
+	align-items: flex-start;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+}
+.orchidsAreEasilyEveryonesFWrapper {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	padding: 0px 0px 0px 20px;
+	font-size: 16px;
+}
+.orchidsAreEasily {
+	width: 259px;
+	position: relative;
+	letter-spacing: -0.01em;
+	display: inline-block;
+	flex-shrink: 0;
+}
+.frameWrapper3 {
+	width: 450px;
+	border-radius: 20px;
+	height: 411px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	box-sizing: border-box;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	mix-blend-mode: luminosity;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.frameWrapper3:hover {
+	z-index: 10;
+	position: relative;
+	mix-blend-mode: normal;
+	backdrop-filter: blur(10px);
+	background-position: center top;
+	transform: scale(1.05);
+}
+
+.frameWrapper3:hover .petFriendlyPlants {
+	font-size: 32px;
+}
+
+.frameWrapper3:hover .frameChild {
+	transform: translateY(-30px);
+}
+
+.frameWrapper3:hover ~ .frameWrapper2 {
+	width: 450px;
+	mix-blend-mode: luminosity;
+}
+
+
+/* Стили для четвертой карточки "Хочу стать членом команды" */
+.frameWrapper4 {
+	width: 380px;
+	border-radius: 20px;
+	height: 411px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	box-sizing: border-box;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	mix-blend-mode: luminosity;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.frameWrapper4:hover {
+	width: 633px;
+	transform: scale(1.05);
+	z-index: 10;
+	position: relative;
+	mix-blend-mode: normal;
+}
+
+.frameWrapper4:hover .joinTeam {
+	font-size: 32px;
+}
+
+.frameWrapper4:hover ~ .frameWrapper2,
+.frameWrapper4:hover ~ .frameWrapper3 {
+	width: 380px;
+	mix-blend-mode: luminosity;
+}
+
+.frameParent6 {
+	align-self: stretch;
+	width: 593px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 0px;
+}
+
+.frameParent7 {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 18px 0px;
+	gap: 35px;
+}
+
+.joinTeamParent {
+	align-self: stretch;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.joinTeam {
+	position: relative;
+	letter-spacing: -0.01em;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: left;
+	color: #fff;
+}
+
+
+.buttonCenterWrapper {
+	align-self: stretch;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.applyButton {
+	backdrop-filter: blur(7px);
+	border-radius: 29px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 0.5px solid #5a5a5a;
+	color: #fff;
+	padding: 12px 19px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 16px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	display: inline-block;
+	letter-spacing: 0.01em;
+	text-align: center;
+}
+
+.applyButton:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 0.5px solid #fff;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+.allSucculentsAre {
+	width: 252px;
+	position: relative;
+	letter-spacing: -0.01em;
+	display: inline-block;
+	flex-shrink: 0;
+}

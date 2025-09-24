@@ -1,0 +1,175 @@
+.groupParent {
+	width: 100%;
+	position: relative;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 55px;
+	margin-bottom: 80px;
+	box-sizing: border-box;
+	gap: 40px;
+}
+
+.textContent {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	text-align: center;
+}
+
+.qualityPlantsAnd {
+	position: relative;
+	letter-spacing: -0.05em;
+	line-height: 118%;
+	font-weight: 800;
+	display: inline-block;
+	width: auto;
+	font-size: 108.96px;
+	color: #000;
+	font-family: 'Inter', sans-serif;
+}
+
+.weOfferA {
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 0.01em;
+	font-weight: 600;
+	color: #131313;
+	display: inline-block;
+	width: auto;
+	max-width: 600px;
+}
+
+.victoryImage {
+	width: 60%;
+	max-width: 800px;
+	height: 800px;
+	border-radius: 20px;
+	object-fit: cover;
+	box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.1);
+}
+
+/* Large desktop styles */
+@media (min-width: 1900px) {
+	.groupParent {
+		padding: 40px 55px;
+		margin-bottom: 80px;
+		gap: 40px;
+	}
+	
+	.qualityPlantsAnd {
+		font-size: 108.96px;
+	}
+	
+	.weOfferA {
+		font-size: 18px;
+		max-width: 600px;
+	}
+	
+	.victoryImage {
+		width: 60%;
+		max-width: 800px;
+		height: 500px;
+	}
+}
+
+/* Desktop styles */
+@media (max-width: 1899px) and (min-width: 1400px) {
+	.groupParent {
+		padding: 40px 50px;
+		margin-bottom: 70px;
+		gap: 35px;
+	}
+	
+	.qualityPlantsAnd {
+		font-size: 90px;
+	}
+	
+	.weOfferA {
+		font-size: 17px;
+		max-width: 550px;
+	}
+	
+	.victoryImage {
+		width: 65%;
+		max-width: 700px;
+		height: 450px;
+	}
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+	.groupParent {
+		padding: 30px 30px;
+		margin-bottom: 60px;
+		gap: 30px;
+	}
+	
+	.qualityPlantsAnd {
+		font-size: 70px;
+	}
+	
+	.weOfferA {
+		font-size: 16px;
+		max-width: 500px;
+	}
+	
+	.victoryImage {
+		width: 70%;
+		max-width: 600px;
+		height: 400px;
+	}
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+	.groupParent {
+		padding: 20px 20px;
+		margin-bottom: 40px;
+		gap: 25px;
+	}
+	
+	.qualityPlantsAnd {
+		font-size: 50px;
+	}
+	
+	.weOfferA {
+		font-size: 15px;
+		max-width: 400px;
+	}
+	
+	.victoryImage {
+		width: 80%;
+		max-width: 400px;
+		height: 300px;
+		border-radius: 15px;
+	}
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+	.groupParent {
+		padding: 15px 15px;
+		margin-bottom: 30px;
+		gap: 20px;
+	}
+	
+	.qualityPlantsAnd {
+		font-size: 40px;
+	}
+	
+	.weOfferA {
+		font-size: 14px;
+		max-width: 350px;
+	}
+	
+	.victoryImage {
+		width: 90%;
+		max-width: 350px;
+		height: 250px;
+		border-radius: 12px;
+	}
+}

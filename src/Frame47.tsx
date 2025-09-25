@@ -16,8 +16,6 @@ const Frame47 = () => {
           <div className={styles.frameChild} />
           <img className={styles.frameItem} src="/graphics.svg" alt="Community" />
         </div>
-        <div className={styles.appTitle}>приложение</div>
-        <b className={styles.joinTheCommunity}>Ability!</b>
         <div className={styles.subscribeToTheContainer}>
           <p className={styles.subscribeToThe}>Приложение предоставляет систему
           рекомендаций по посещению врачей и управлению медицинской информацией</p>
@@ -32,7 +30,11 @@ const Frame47 = () => {
             </div>
           </div>
           <div className={styles.frameInner} />
-          <div className={styles.allRightReserved}>ООО "Абилити"ИНН 2312330921</div>
+          <div className={styles.allRightReserved}>ООО "Абилити" ИНН 2312330921</div>   
+          <div className={styles.fasieSection}>
+            <div className={styles.fasieText}>Разработано при поддержке</div>
+            <img className={styles.fasieLogo} src="/FASIE.SVG" alt="FASIE" />
+          </div>
         </div>
       </div>
     </div>

@@ -1,8 +1,9 @@
 .component1Parent {
 	width: 100%;
 	position: relative;
-	height: 794.9px;
-	overflow: hidden;
+	min-height: 794.9px;
+	height: auto;
+	overflow: visible;
 	flex-shrink: 0;
 	display: flex;
 	flex-direction: column;
@@ -29,7 +30,8 @@
 /* Large desktop styles */
 @media (min-width: 1900px) {
 	.component1Parent {
-		height: 794.9px;
+		min-height: 794.9px;
+		height: auto;
 		font-size: 93px;
 		padding: 10px;
 		margin-bottom: 80px;
@@ -59,7 +61,8 @@
 /* Tablet styles */
 @media (max-width: 1024px) {
 	.component1Parent {
-		height: 600px;
+		min-height: 600px;
+		height: auto;
 		font-size: 60px;
 		padding: 20px;
 		margin-bottom: 60px;
@@ -74,7 +77,8 @@
 /* Mobile styles */
 @media (max-width: 768px) {
 	.component1Parent {
-		height: 500px;
+		min-height: 500px;
+		height: auto;
 		font-size: 40px;
 		padding: 15px;
 		margin-bottom: 40px;
@@ -93,10 +97,84 @@
 	}
 }
 
+/* Extra small mobile styles */
+@media (max-width: 425px) {
+	.frameItem {
+		width: 40px !important;
+		height: 40px !important;
+		position: absolute !important;
+		top: 2.92px !important;
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+		z-index: 10 !important;
+		display: block !important;
+		visibility: visible !important;
+		opacity: 1 !important;
+	}
+	
+	.allRightReserved {
+		width: 100% !important;
+		max-width: 100% !important;
+		font-size: 12px !important;
+		line-height: 1.2 !important;
+		text-align: center !important;
+		white-space: normal !important;
+		word-wrap: break-word !important;
+		overflow-wrap: break-word !important;
+		hyphens: auto !important;
+		padding: 0 5px !important;
+		box-sizing: border-box !important;
+		display: block !important;
+		align-self: center !important;
+		justify-self: center !important;
+		margin: 0 auto !important;
+		overflow: hidden !important;
+		text-overflow: ellipsis !important;
+	}
+	
+	.frameParent {
+		align-items: center !important;
+		justify-content: center !important;
+		text-align: center !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		overflow: hidden !important;
+		box-sizing: border-box !important;
+		padding: 10px !important;
+	}
+	
+	.fasieSection {
+		flex-direction: row !important;
+		gap: 3px !important;
+		margin-top: 6px !important;
+		padding: 4px 6px !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		box-sizing: border-box !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+	}
+	
+	.fasieText {
+		font-size: 10px !important;
+		line-height: 1.1 !important;
+		white-space: nowrap !important;
+		flex-shrink: 1 !important;
+	}
+	
+	.fasieLogo {
+		width: 45px !important;
+		height: auto !important;
+		flex-shrink: 0 !important;
+	}
+}
+
 /* Small mobile styles */
 @media (max-width: 480px) {
 	.component1Parent {
-		height: 400px;
+		min-height: 400px;
+		height: auto;
 		font-size: 30px;
 		padding: 10px;
 		margin-bottom: 30px;
@@ -117,8 +195,9 @@
 .component1 {
 	width: 1420px;
 	border-radius: 35px;
-	height: 774.9px;
-	overflow: hidden;
+	min-height: 774.9px;
+	height: auto;
+	overflow: visible;
 	flex-shrink: 0;
 	display: flex;
 	flex-direction: column;
@@ -178,6 +257,40 @@
 		overflow-wrap: break-word;
 		hyphens: auto;
 	}
+	
+	.fasieSection {
+		flex-direction: row;
+		gap: 6px;
+		margin-top: 12px;
+		padding: 8px 12px;
+	}
+	
+	.fasieText {
+		font-size: 13px;
+		line-height: 1.2;
+	}
+	
+	.fasieLogo {
+		width: 70px;
+	}
+	
+	.allRightReserved {
+		width: 100% !important;
+		max-width: 100% !important;
+		font-size: 18px !important;
+		line-height: 1.2 !important;
+		text-align: center !important;
+		white-space: nowrap !important;
+		word-wrap: normal !important;
+		overflow-wrap: normal !important;
+		hyphens: none !important;
+		padding: 0 10px !important;
+		box-sizing: border-box !important;
+		display: block !important;
+		align-self: center !important;
+		justify-self: center !important;
+		margin: 0 auto !important;
+	}
 }
 .lineParent {
 	align-self: stretch;
@@ -205,7 +318,10 @@
 	transform: translateX(-50%);
 	border-radius: 50px;
 	height: 88px;
-	z-index: 1;
+	z-index: 10;
+	display: block;
+	visibility: visible;
+	opacity: 1;
 }
 .appTitle {
 	font-size: 0.6em;
@@ -301,6 +417,24 @@
 	.home {
 		font-size: 14px;
 	}
+	
+	.allRightReserved {
+		width: 100% !important;
+		max-width: 100% !important;
+		font-size: 16px !important;
+		line-height: 1.2 !important;
+		text-align: center !important;
+		white-space: nowrap !important;
+		word-wrap: normal !important;
+		overflow-wrap: normal !important;
+		hyphens: none !important;
+		padding: 0 8px !important;
+		box-sizing: border-box !important;
+		display: block !important;
+		align-self: center !important;
+		justify-self: center !important;
+		margin: 0 auto !important;
+	}
 }
 
 /* Small mobile styles */
@@ -320,6 +454,24 @@
 		font-size: 13px;
 	}
 	
+	.allRightReserved {
+		width: 100% !important;
+		max-width: 100% !important;
+		font-size: 14px !important;
+		line-height: 1.1 !important;
+		text-align: center !important;
+		white-space: nowrap !important;
+		word-wrap: normal !important;
+		overflow-wrap: normal !important;
+		hyphens: none !important;
+		padding: 0 6px !important;
+		box-sizing: border-box !important;
+		display: block !important;
+		align-self: center !important;
+		justify-self: center !important;
+		margin: 0 auto !important;
+	}
+	
 	.subscribeToTheContainer {
 		width: 100%;
 		max-width: 400px;
@@ -334,6 +486,32 @@
 		word-wrap: break-word;
 		overflow-wrap: break-word;
 		hyphens: auto;
+	}
+	
+	.fasieSection {
+		flex-direction: row !important;
+		gap: 4px !important;
+		margin-top: 8px !important;
+		padding: 6px 8px !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		box-sizing: border-box !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+	}
+	
+	.fasieText {
+		font-size: 11px !important;
+		line-height: 1.1 !important;
+		white-space: nowrap !important;
+		flex-shrink: 1 !important;
+	}
+	
+	.fasieLogo {
+		width: 50px !important;
+		height: auto !important;
+		flex-shrink: 0 !important;
 	}
 }
 
@@ -353,6 +531,105 @@
 		word-wrap: break-word;
 		overflow-wrap: break-word;
 		hyphens: auto;
+	}
+	
+	.fasieSection {
+		flex-direction: row !important;
+		gap: 3px !important;
+		margin-top: 6px !important;
+		padding: 4px 6px !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		box-sizing: border-box !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+	}
+	
+	.fasieText {
+		font-size: 10px !important;
+		line-height: 1.0 !important;
+		white-space: nowrap !important;
+		flex-shrink: 1 !important;
+	}
+	
+	.fasieLogo {
+		width: 40px !important;
+		height: auto !important;
+		flex-shrink: 0 !important;
+	}
+}
+
+/* Very small mobile styles */
+@media (max-width: 375px) {
+	.frameItem {
+		width: 35px !important;
+		height: 35px !important;
+		position: absolute !important;
+		top: 2.92px !important;
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+		z-index: 10 !important;
+		display: block !important;
+		visibility: visible !important;
+		opacity: 1 !important;
+	}
+	
+	.allRightReserved {
+		width: 100% !important;
+		max-width: 100% !important;
+		font-size: 11px !important;
+		line-height: 1.2 !important;
+		text-align: center !important;
+		white-space: normal !important;
+		word-wrap: break-word !important;
+		overflow-wrap: break-word !important;
+		hyphens: auto !important;
+		padding: 0 4px !important;
+		box-sizing: border-box !important;
+		display: block !important;
+		align-self: center !important;
+		justify-self: center !important;
+		margin: 0 auto !important;
+		overflow: hidden !important;
+		text-overflow: ellipsis !important;
+	}
+	
+	.frameParent {
+		align-items: center !important;
+		justify-content: center !important;
+		text-align: center !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		overflow: hidden !important;
+		box-sizing: border-box !important;
+		padding: 8px !important;
+	}
+	
+	.fasieSection {
+		flex-direction: row !important;
+		gap: 2px !important;
+		margin-top: 5px !important;
+		padding: 3px 5px !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		box-sizing: border-box !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+	}
+	
+	.fasieText {
+		font-size: 9px !important;
+		line-height: 1.0 !important;
+		white-space: nowrap !important;
+		flex-shrink: 1 !important;
+	}
+	
+	.fasieLogo {
+		width: 40px !important;
+		height: auto !important;
+		flex-shrink: 0 !important;
 	}
 }
 
@@ -440,6 +717,58 @@
 		hyphens: auto !important;
 		line-height: 1.2 !important;
 	}
+	
+	.allRightReserved {
+		width: 100% !important;
+		max-width: 100% !important;
+		position: relative !important;
+		font-size: 10px !important;
+		line-height: 1.2 !important;
+		font-weight: 300 !important;
+		text-align: center !important;
+		display: block !important;
+		white-space: nowrap !important;
+		word-wrap: normal !important;
+		overflow-wrap: normal !important;
+		hyphens: none !important;
+		padding: 0 5px !important;
+		box-sizing: border-box !important;
+		align-self: center !important;
+		justify-self: center !important;
+		margin: 0 auto !important;
+	}
+	
+	.fasieSection {
+		display: flex !important;
+		flex-direction: row !important;
+		align-items: center !important;
+		justify-content: center !important;
+		gap: 4px !important;
+		margin-top: 8px !important;
+		padding: 6px 8px !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		box-sizing: border-box !important;
+	}
+	
+	.fasieText {
+		font-size: 9px !important;
+		line-height: 1.0 !important;
+		font-weight: 300 !important;
+		text-align: center !important;
+		color: #666 !important;
+		white-space: nowrap !important;
+		flex-shrink: 1 !important;
+	}
+	
+	.fasieLogo {
+		width: 35px !important;
+		height: auto !important;
+		max-width: 100% !important;
+		object-fit: contain !important;
+		opacity: 0.8 !important;
+		flex-shrink: 0 !important;
+	}
 }
 .homeWrapper {
 	border-radius: 60px;
@@ -477,11 +806,51 @@
 	height: 2px;
 }
 .allRightReserved {
-	width: 640px;
+	width: 100%;
+	max-width: 640px;
 	position: relative;
 	font-size: 24px;
-	line-height: 0%;
+	line-height: 1.2;
 	font-weight: 300;
 	text-align: center;
-	display: inline-block;
+	display: block;
+	margin: 0 auto;
+	white-space: nowrap;
+	word-wrap: normal;
+	overflow-wrap: normal;
+	hyphens: none;
+	align-self: center;
+	justify-self: center;
+}
+
+/* FASIE Section - Base styles */
+.fasieSection {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 15px;
+	padding: 10px 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.fasieText {
+	font-size: 14px;
+	line-height: 1.3;
+	font-weight: 300;
+	text-align: center;
+	color: #666;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	hyphens: auto;
+}
+
+.fasieLogo {
+	width: 80px;
+	height: auto;
+	max-width: 100%;
+	object-fit: contain;
+	opacity: 0.8;
 }

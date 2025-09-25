@@ -7,7 +7,7 @@ const Frame47 = () => {
         className={styles.backgroundVideo}
         autoPlay 
         loop 
-        muted 
+        muted
         playsInline
         src="/6fb0aedec6a6955bba34b2ab3b827584.mp4"
       />

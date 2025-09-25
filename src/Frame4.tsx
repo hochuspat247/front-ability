@@ -22,9 +22,6 @@ const Frame4 = () => {
                 <b className={styles.b}>Возраст:18–25 лет</b>
               </div>
             </div>
-            <div className={styles.iconOutlinedActionMaiWrapper}>
-              <img className={styles.iconOutlinedActionMai} src="/icon/outlined/action/main/heart.svg" alt="Add to cart" />
-            </div>
           </div>
           <div className={styles.rectangleParent}>
             <video className={styles.instanceChild} autoPlay loop muted playsInline>
@@ -39,9 +36,6 @@ const Frame4 = () => {
                 <b className={styles.b}>Статус: Работающие специалисты</b>
               </div>
             </div>
-            <div className={styles.iconOutlinedActionMaiWrapper}>
-              <img className={styles.iconOutlinedActionMai} src="/icon/outlined/action/main/heart.svg" alt="Add to cart" />
-            </div>
           </div>
           <div className={styles.rectangleParent}>
             <video className={styles.instanceChild} autoPlay loop muted playsInline>
@@ -55,9 +49,6 @@ const Frame4 = () => {
                 </div>
                 <b className={styles.b}>Возраст: 25–50 лет</b>
               </div>
-            </div>
-            <div className={styles.iconOutlinedActionMaiWrapper}>
-              <img className={styles.iconOutlinedActionMai} src="/icon/outlined/action/main/heart.svg" alt="Add to cart" />
             </div>
           </div>
         </div>

@@ -58,6 +58,74 @@
 	}
 }
 
+/* Large desktop styles */
+@media (max-width: 1440px) and (min-width: 1200px) {
+	.component1Parent {
+		height: 650px;
+		font-size: 70px;
+		padding: 12px;
+		margin-bottom: 60px;
+	}
+	
+	.component1 {
+		width: 100%;
+		max-width: 1000px;
+		gap: 30px;
+		padding: 15px;
+	}
+	
+	.frameParent {
+		width: 100%;
+		max-width: 500px;
+		padding: 0px 100px;
+		gap: 35px;
+	}
+	
+	.allRightReserved {
+		width: 100%;
+		max-width: 100%;
+		font-size: 20px;
+		line-height: 1.2;
+		text-align: center;
+		white-space: nowrap;
+		word-wrap: normal;
+		overflow-wrap: normal;
+		hyphens: none;
+		padding: 0 8px;
+		box-sizing: border-box;
+		display: block;
+		align-self: center;
+		justify-self: center;
+		margin: 0 auto;
+	}
+	
+	.fasieSection {
+		flex-direction: row;
+		gap: 6px;
+		margin-top: 8px;
+		padding: 5px 8px;
+		width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.fasieText {
+		font-size: 12px;
+		line-height: 1.1;
+		white-space: nowrap;
+		flex-shrink: 1;
+	}
+	
+	.fasieLogo {
+		width: 60px;
+		height: auto;
+		flex-shrink: 0;
+	}
+}
+
 /* Tablet styles */
 @media (max-width: 1024px) {
 	.component1Parent {

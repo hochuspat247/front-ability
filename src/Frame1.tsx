@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Icon } from '@iconify/react';
 import styles from './Frame1.module.css';
 import Frame10 from './Frame10';
 import Frame3 from './Frame3';
@@ -10,9 +11,14 @@ import Frame47 from './Frame47';
 
 const Frame1 = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isVideoMuted, setIsVideoMuted] = useState(true);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const toggleVideoSound = () => {
+    setIsVideoMuted(!isVideoMuted);
   };
 
   // Закрытие меню при клике вне его
@@ -46,6 +52,7 @@ const Frame1 = () => {
           loop 
           playsInline
           preload="auto"
+          muted={isVideoMuted}
           onError={(e) => {
             console.log('Video error:', e);
             // Скрываем видео при ошибке
@@ -124,17 +131,30 @@ const Frame1 = () => {
               </div>
             </div>
           </div>
-          <a 
-            href="https://www.rustore.ru/catalog/app/com.alexej123.ability.possibility" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={styles.shopTropicalPlantsWrapper}
-          >
-            <div className={styles.shopTropicalPlants}>Скачать приложение</div>
-            <div className={styles.uiIconarrowDownlightWrapper}>
-              <img className={styles.uiIconarrowDownlight} src="/UI icon/arrow_down/light.svg" alt="Arrow down" />
-            </div>
-          </a>
+          <div className={styles.buttonsContainer}>
+            <a 
+              href="https://www.rustore.ru/catalog/app/com.alexej123.ability.possibility" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.shopTropicalPlantsWrapper}
+            >
+              <div className={styles.shopTropicalPlants}>Скачать приложение</div>
+              <div className={styles.uiIconarrowDownlightWrapper}>
+                <img className={styles.uiIconarrowDownlight} src="/UI icon/arrow_down/light.svg" alt="Arrow down" />
+              </div>
+            </a>
+            <button 
+              onClick={toggleVideoSound}
+              className={styles.soundToggleButton}
+              title={isVideoMuted ? "Включить звук" : "Выключить звук"}
+            >
+              {isVideoMuted ? (
+                <Icon icon="material-symbols:volume-off" className={styles.soundIcon} />
+              ) : (
+                <Icon icon="material-symbols:volume-up" className={styles.soundIcon} />
+              )}
+            </button>
+          </div>
         </div>
       </div>
       <Frame10 />

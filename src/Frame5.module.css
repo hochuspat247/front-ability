@@ -84,7 +84,92 @@
 	}
 	
 	.frameWrapper, .frameParent {
+		width: 100% !important;
+		max-width: 100% !important;
+		margin: 0 auto 15px auto;
+	}
+	
+	.orderingForDelivery {
+		font-size: 16px;
+		line-height: 1.2;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+	}
+	
+	.weOfferPotting {
+		font-size: 13px;
+		line-height: 1.3;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+		white-space: normal;
+		word-break: break-word;
 		max-width: 100%;
+	}
+	
+	.weOfferPottingOnInStorePWrapper {
+		padding: 12px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	.weOfferPottingContainer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 8px;
+	}
+	
+	.orderingForDeliveryParent {
+		padding: 15px;
+		gap: 15px;
+		flex-wrap: wrap;
+	}
+}
+
+/* Very small mobile styles */
+@media (max-width: 375px) {
+	.orderingForDelivery {
+		font-size: 14px;
+		line-height: 1.1;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+	}
+	
+	.weOfferPotting {
+		font-size: 12px;
+		line-height: 1.2;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+		white-space: normal;
+		word-break: break-word;
+		max-width: 100%;
+	}
+	
+	.weOfferPottingOnInStorePWrapper {
+		padding: 10px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	.weOfferPottingContainer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 8px;
+	}
+	
+	.orderingForDeliveryParent {
+		padding: 12px;
+		gap: 12px;
+		flex-wrap: wrap;
 	}
 }
 .frameWrapper {
@@ -120,21 +205,57 @@
 
 /* Tablet styles */
 @media (max-width: 1024px) {
-	.frameWrapper {
-		width: 100%;
-		max-width: 800px;
+	.frameWrapper, .frameParent {
+		width: 100% !important;
+		max-width: 800px !important;
 		min-height: 150px;
 		padding: 0px;
+		margin: 0 auto 15px auto;
 	}
 }
 
 /* Mobile styles */
 @media (max-width: 768px) {
-	.frameWrapper {
-		width: 100%;
-		max-width: 400px;
+	.frameWrapper, .frameParent {
+		width: 100% !important;
+		max-width: 400px !important;
 		min-height: 120px;
 		padding: 0px;
+		margin: 0 auto 15px auto;
+	}
+	
+	.orderingForDelivery {
+		font-size: 18px;
+		line-height: 1.3;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+	}
+	
+	.weOfferPotting {
+		font-size: 14px;
+		line-height: 1.4;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+		white-space: normal;
+		word-break: break-word;
+		max-width: 100%;
+	}
+	
+	.weOfferPottingOnInStorePWrapper {
+		padding: 15px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	.weOfferPottingContainer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 10px;
 	}
 }
 .orderingForDeliveryParent {
@@ -288,4 +409,47 @@
 	margin: 0 0 10px 0;
 	font-size: 16px;
 	line-height: 1.5;
+}
+
+/* Extra small mobile styles (320px) */
+@media (max-width: 320px) {
+	.orderingForDelivery {
+		font-size: 13px;
+		line-height: 1.0;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+	}
+	
+	.weOfferPotting {
+		font-size: 11px;
+		line-height: 1.1;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+		white-space: normal;
+		word-break: break-word;
+		max-width: 100%;
+	}
+	
+	.weOfferPottingOnInStorePWrapper {
+		padding: 8px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	.weOfferPottingContainer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 6px;
+	}
+	
+	.orderingForDeliveryParent {
+		padding: 8px;
+		gap: 8px;
+		flex-wrap: wrap;
+	}
 }

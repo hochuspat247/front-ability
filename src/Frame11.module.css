@@ -59,6 +59,12 @@
 		margin-bottom: 60px;
 		gap: 30px;
 		font-size: 80px;
+		align-items: center;
+		text-align: center;
+	}
+	
+	.newPlantsParent {
+		justify-content: center;
 	}
 	
 	.instanceParent {
@@ -66,12 +72,15 @@
 		gap: 15px;
 		flex-wrap: wrap;
 		justify-content: center;
+		align-items: stretch;
 	}
 	
-	.frameWrapper, .frameContainer, .frameWrapper2 {
-		height: 300px;
+	.frameWrapper, .frameContainer, .frameWrapper2, .frameWrapper3 {
+		height: 300px !important;
 		min-width: 250px;
 		max-width: 350px;
+		width: 300px !important;
+		flex-shrink: 0;
 	}
 }
 
@@ -91,6 +100,7 @@
 		gap: 15px;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 	}
 	
 	.frameWrapper, .frameContainer, .frameWrapper2 {
@@ -98,6 +108,44 @@
 		width: 100%;
 		min-width: 280px;
 		max-width: 350px;
+		filter: none !important;
+		mix-blend-mode: normal !important;
+		margin: 0 auto;
+	}
+	
+	.frameWrapper:hover, .frameContainer:hover, .frameWrapper2:hover {
+		transform: none !important;
+		filter: none !important;
+		mix-blend-mode: normal !important;
+	}
+	
+	.newPlants {
+		font-size: 40px;
+		text-align: center;
+		width: 100%;
+		min-width: auto;
+	}
+	
+	.calathea {
+		font-size: 20px;
+		line-height: 1.2;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+	}
+	
+	.loremIpsumDolor {
+		font-size: 14px;
+		line-height: 1.3;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+		white-space: normal;
+	}
+	
+	.calatheaParent {
+		padding: 15px 20px;
+		gap: 15px;
 	}
 }
 
@@ -108,12 +156,209 @@
 		margin-bottom: 30px;
 		gap: 20px;
 		font-size: 40px;
+		align-items: center;
+		text-align: center;
+	}
+	
+	.instanceParent {
+		align-items: center;
+		justify-content: center;
 	}
 	
 	.frameWrapper, .frameContainer, .frameWrapper2 {
 		height: 220px;
 		min-width: 250px;
 		max-width: 320px;
+		margin: 0 auto;
+	}
+	
+	.newPlants {
+		font-size: 32px;
+		text-align: center;
+		width: 100%;
+		min-width: auto;
+	}
+	
+	.calathea {
+		font-size: 18px;
+		line-height: 1.1;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+	}
+	
+	.loremIpsumDolor {
+		font-size: 13px;
+		line-height: 1.2;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+		white-space: normal;
+	}
+	
+	.calatheaParent {
+		padding: 12px 15px;
+		gap: 12px;
+	}
+}
+
+/* Very small mobile styles */
+@media (max-width: 375px) {
+	.calathea {
+		font-size: 16px;
+		line-height: 1.0;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+	}
+	
+	.loremIpsumDolor {
+		font-size: 12px;
+		line-height: 1.1;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+		white-space: normal;
+	}
+	
+	.calatheaParent {
+		padding: 10px 12px;
+		gap: 10px;
+	}
+}
+
+/* Extra small mobile styles (320px) */
+@media (max-width: 320px) {
+	.frameWrapper, .frameContainer, .frameWrapper2 {
+		height: 180px;
+		min-width: 200px;
+		max-width: 280px;
+		margin: 0 auto;
+	}
+	
+	.calathea {
+		font-size: 14px;
+		line-height: 1.0;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+	}
+	
+	.loremIpsumDolor {
+		font-size: 11px;
+		line-height: 1.0;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+		white-space: normal;
+	}
+	
+	.calatheaParent {
+		padding: 8px 10px;
+		gap: 8px;
+	}
+	
+	.newPlants {
+		font-size: 24px;
+		text-align: center;
+		width: 100%;
+		min-width: auto;
+	}
+	
+	.frameParent {
+		padding: 20px 5px !important;
+		margin-bottom: 15px !important;
+		gap: 10px !important;
+		font-size: 24px !important;
+		align-items: center !important;
+		text-align: center !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		box-sizing: border-box !important;
+	}
+	
+	.instanceParent {
+		width: 100% !important;
+		max-width: 100% !important;
+		gap: 8px !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		justify-content: center !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	
+	.frameWrapper, .frameContainer, .frameWrapper2 {
+		width: 100% !important;
+		max-width: 280px !important;
+		height: 160px !important;
+		margin: 0 auto !important;
+		flex-shrink: 0 !important;
+	}
+	
+	.calatheaParent {
+		padding: 6px 8px !important;
+		gap: 6px !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		box-sizing: border-box !important;
+	}
+	
+	.calathea {
+		font-size: 12px !important;
+		line-height: 1.0 !important;
+		word-wrap: break-word !important;
+		overflow-wrap: break-word !important;
+		hyphens: auto !important;
+		text-align: center !important;
+	}
+	
+	.loremIpsumDolor {
+		font-size: 10px !important;
+		line-height: 1.0 !important;
+		word-wrap: break-word !important;
+		overflow-wrap: break-word !important;
+		hyphens: auto !important;
+		white-space: normal !important;
+		text-align: center !important;
+	}
+	
+	.newPlants {
+		font-size: 20px !important;
+		text-align: center !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: auto !important;
+		padding: 0 5px !important;
+		word-wrap: break-word !important;
+		overflow-wrap: break-word !important;
+		hyphens: auto !important;
+		box-sizing: border-box !important;
+		line-height: 1.1 !important;
+	}
+	
+	.newPlantsParent {
+		height: auto !important;
+		min-height: auto !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		box-sizing: border-box !important;
+	}
+}
+
+/* Extra small mobile styles */
+@media (max-width: 425px) {
+	.newPlants {
+		font-size: 28px;
+		text-align: center;
+		width: 100%;
+		min-width: auto;
+		padding: 0 10px;
 	}
 }
 .newPlantsParent {
@@ -269,9 +514,11 @@
 /* Tablet styles */
 @media (max-width: 1024px) {
 	.frameContainer, .frameWrapper2, .frameWrapper3 {
-		height: 300px;
+		height: 300px !important;
 		min-width: 250px;
 		max-width: 350px;
+		width: 300px !important;
+		flex-shrink: 0;
 	}
 }
 
@@ -282,8 +529,16 @@
 		width: 100%;
 		min-width: 280px;
 		max-width: 350px;
+		filter: none !important;
+		mix-blend-mode: normal !important;
+		margin: 0 auto;
 	}
 	
+	.frameContainer:hover, .frameWrapper2:hover, .frameWrapper3:hover {
+		transform: none !important;
+		filter: none !important;
+		mix-blend-mode: normal !important;
+	}
 }
 .frameDiv {
 	align-self: stretch;

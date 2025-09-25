@@ -16,6 +16,7 @@ const Frame47 = () => {
           <div className={styles.frameChild} />
           <img className={styles.frameItem} src="/graphics.svg" alt="Community" />
         </div>
+        <div className={styles.appTitle}>приложение</div>
         <b className={styles.joinTheCommunity}>Ability!</b>
         <div className={styles.subscribeToTheContainer}>
           <p className={styles.subscribeToThe}>Приложение предоставляет систему

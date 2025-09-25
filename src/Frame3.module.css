@@ -22,6 +22,13 @@
 	margin-bottom: 20px;
 }
 
+/* Tablet styles for resultsHeader */
+@media (max-width: 1024px) {
+	.resultsHeader {
+		justify-content: center;
+	}
+}
+
 .resultsTitle {
 	position: relative;
 	font-size: 125.27px;
@@ -57,6 +64,41 @@
 	.resultsTitle {
 		font-size: 100px;
 	}
+	
+	.instanceParent {
+		height: auto;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+	}
+	
+	.homeWrapper, .homeContainer {
+		height: 55px;
+		padding: 15px 25px;
+		font-size: 16px;
+		flex-shrink: 0;
+		min-width: fit-content;
+	}
+}
+
+/* Specific 1440px styles */
+@media (max-width: 1440px) and (min-width: 1200px) {
+	.instanceParent {
+		height: auto !important;
+		flex-wrap: wrap !important;
+		justify-content: center !important;
+		gap: 15px !important;
+		width: 100% !important;
+	}
+	
+	.homeWrapper, .homeContainer {
+		height: 50px !important;
+		padding: 12px 20px !important;
+		font-size: 15px !important;
+		flex-shrink: 0 !important;
+		min-width: fit-content !important;
+		white-space: nowrap !important;
+	}
 }
 
 /* Tablet styles */
@@ -66,10 +108,13 @@
 		margin-bottom: 60px;
 		gap: 30px;
 		font-size: 22px;
+		align-items: center;
 	}
 	
 	.resultsTitle {
 		font-size: 80px;
+		text-align: center;
+		width: 100%;
 	}
 }
 
@@ -94,10 +139,59 @@
 	justify-content: space-between;
 	gap: 0px;
 }
+
+/* Tablet styles for frameGroup */
+@media (max-width: 1024px) {
+	.frameGroup {
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+	}
+}
+
+/* Mobile styles for frameGroup */
+@media (max-width: 768px) {
+	.frameGroup {
+		flex-direction: column;
+		gap: 15px;
+		align-items: center;
+	}
+}
 .instanceParent {
 	height: 59px;
 	display: flex;
 	align-items: flex-start;
+	gap: 15px;
+}
+
+/* Tablet styles for instanceParent */
+@media (max-width: 1024px) {
+	.instanceParent {
+		height: auto;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 12px;
+	}
+}
+
+/* Mobile styles for instanceParent */
+@media (max-width: 768px) {
+	.instanceParent {
+		height: auto;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+	}
+}
+
+/* Small mobile styles for instanceParent */
+@media (max-width: 480px) {
+	.instanceParent {
+		height: auto;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 8px;
+	}
 }
 .homeWrapper {
 	border-radius: 60px;
@@ -113,6 +207,34 @@
 	color: #fff;
 	transition: all 0.3s ease;
 	cursor: pointer;
+	flex-shrink: 0;
+}
+
+/* Tablet styles for homeWrapper */
+@media (max-width: 1024px) {
+	.homeWrapper {
+		height: 50px;
+		padding: 15px 30px;
+		font-size: 16px;
+	}
+}
+
+/* Mobile styles for homeWrapper */
+@media (max-width: 768px) {
+	.homeWrapper {
+		height: 45px;
+		padding: 12px 25px;
+		font-size: 14px;
+	}
+}
+
+/* Small mobile styles for homeWrapper */
+@media (max-width: 480px) {
+	.homeWrapper {
+		height: 40px;
+		padding: 10px 20px;
+		font-size: 12px;
+	}
 }
 
 .homeWrapper:hover {
@@ -139,6 +261,34 @@
 	padding: 20px 40px;
 	transition: all 0.3s ease;
 	cursor: pointer;
+	flex-shrink: 0;
+}
+
+/* Tablet styles for homeContainer */
+@media (max-width: 1024px) {
+	.homeContainer {
+		height: 50px;
+		padding: 15px 30px;
+		font-size: 16px;
+	}
+}
+
+/* Mobile styles for homeContainer */
+@media (max-width: 768px) {
+	.homeContainer {
+		height: 45px;
+		padding: 12px 25px;
+		font-size: 14px;
+	}
+}
+
+/* Small mobile styles for homeContainer */
+@media (max-width: 480px) {
+	.homeContainer {
+		height: 40px;
+		padding: 10px 20px;
+		font-size: 12px;
+	}
 }
 
 .homeContainer:hover {
@@ -156,6 +306,26 @@
 	gap: 14px;
 	font-size: 53px;
 	color: #fff;
+}
+
+/* Tablet styles for frameContainer */
+@media (max-width: 1024px) {
+	.frameContainer {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		justify-content: center;
+	}
+}
+
+/* Mobile styles for frameContainer */
+@media (max-width: 768px) {
+	.frameContainer {
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+		justify-content: center;
+	}
 }
 .frameWrapper {
 	width: 450px;
@@ -224,15 +394,37 @@
 	
 	.instanceParent {
 		gap: 35px;
+		height: auto;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+/* Specific 1440px styles for cards */
+@media (max-width: 1440px) and (min-width: 1200px) {
+	.frameWrapper, .frameWrapper2, .frameWrapper3, .frameWrapper4 {
+		width: 350px !important;
+		height: 350px !important;
+		margin: 0 auto !important;
+	}
+	
+	.frameContainer .instanceParent {
+		gap: 25px !important;
+		height: auto !important;
+		flex-wrap: wrap !important;
+		justify-content: center !important;
+		width: 100% !important;
 	}
 }
 
 /* Tablet styles */
 @media (max-width: 1024px) {
 	.frameWrapper, .frameWrapper2, .frameWrapper3, .frameWrapper4 {
-		width: 100%;
-		max-width: 500px;
-		height: 350px;
+		width: 500px !important;
+		height: 450px !important;
+		margin: 0 auto;
+		mix-blend-mode: normal;
+		flex-shrink: 0;
 	}
 	
 	.instanceParent {
@@ -240,14 +432,40 @@
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+	
+	/* Отключаем hover эффекты на планшетах */
+	.frameWrapper:hover,
+	.frameWrapper2:hover,
+	.frameWrapper3:hover,
+	.frameWrapper4:hover {
+		transform: none;
+		z-index: auto;
+		position: relative;
+		backdrop-filter: none;
+		background-position: center top;
+		mix-blend-mode: normal;
+	}
+	
+	/* Отключаем эффекты изменения размера других карточек */
+	.frameContainer:hover .frameWrapper:not(:hover),
+	.frameWrapper:hover ~ .frameWrapper4,
+	.frameWrapper2:hover ~ .frameWrapper4,
+	.frameWrapper3:hover ~ .frameWrapper4,
+	.frameWrapper4:hover ~ .frameWrapper2,
+	.frameWrapper4:hover ~ .frameWrapper3 {
+		width: 500px !important;
+		mix-blend-mode: normal;
+	}
 }
 
 /* Mobile styles */
 @media (max-width: 768px) {
 	.frameWrapper, .frameWrapper2, .frameWrapper3, .frameWrapper4 {
-		width: 100%;
-		max-width: 400px;
-		height: 300px;
+		width: 400px !important;
+		height: 380px !important;
+		margin: 0 auto;
+		mix-blend-mode: normal;
+		flex-shrink: 0;
 	}
 	
 	.instanceParent {
@@ -255,18 +473,181 @@
 		flex-direction: column;
 		align-items: center;
 	}
+	
+	/* Отключаем hover эффекты на мобильных */
+	.frameWrapper:hover,
+	.frameWrapper2:hover,
+	.frameWrapper3:hover,
+	.frameWrapper4:hover {
+		transform: none;
+		z-index: auto;
+		position: relative;
+		backdrop-filter: none;
+		background-position: center top;
+		mix-blend-mode: normal;
+	}
+	
+	/* Отключаем эффекты изменения размера других карточек */
+	.frameContainer:hover .frameWrapper:not(:hover),
+	.frameWrapper:hover ~ .frameWrapper4,
+	.frameWrapper2:hover ~ .frameWrapper4,
+	.frameWrapper3:hover ~ .frameWrapper4,
+	.frameWrapper4:hover ~ .frameWrapper2,
+	.frameWrapper4:hover ~ .frameWrapper3 {
+		width: 400px !important;
+		mix-blend-mode: normal;
+	}
 }
 
 /* Small mobile styles */
 @media (max-width: 480px) {
 	.frameWrapper, .frameWrapper2, .frameWrapper3, .frameWrapper4 {
-		width: 100%;
-		max-width: 350px;
-		height: 280px;
+		width: 350px !important;
+		height: 350px !important;
+		margin: 0 auto;
+		mix-blend-mode: normal;
+		flex-shrink: 0;
 	}
 	
 	.instanceParent {
 		gap: 20px;
+	}
+	
+	.instanceWrapper {
+		gap: 8px;
+		padding: 0 5px;
+	}
+	
+	.frameParent4 {
+		padding: 6px 10px;
+		gap: 4px;
+	}
+	
+	/* Отключаем hover эффекты на маленьких мобильных */
+	.frameWrapper:hover,
+	.frameWrapper2:hover,
+	.frameWrapper3:hover,
+	.frameWrapper4:hover {
+		transform: none;
+		z-index: auto;
+		position: relative;
+		backdrop-filter: none;
+		background-position: center top;
+		mix-blend-mode: normal;
+	}
+	
+	/* Отключаем эффекты изменения размера других карточек */
+	.frameContainer:hover .frameWrapper:not(:hover),
+	.frameWrapper:hover ~ .frameWrapper4,
+	.frameWrapper2:hover ~ .frameWrapper4,
+	.frameWrapper3:hover ~ .frameWrapper4,
+	.frameWrapper4:hover ~ .frameWrapper2,
+	.frameWrapper4:hover ~ .frameWrapper3 {
+		width: 350px !important;
+		mix-blend-mode: normal;
+	}
+}
+
+/* Extra small mobile styles */
+@media (max-width: 425px) {
+	.instanceWrapper {
+		flex-direction: column;
+		gap: 8px;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: 0 5px;
+	}
+	
+	.frameParent4 {
+		flex: 1;
+		max-width: 100%;
+		padding: 6px 8px;
+		gap: 4px;
+		justify-content: center;
+		min-width: 150px;
+	}
+	
+	.piperaceaca {
+		font-size: 12px;
+		text-align: center;
+	}
+	
+	.instanceChild {
+		width: 35px;
+		height: 35px;
+	}
+}
+
+/* Very small mobile styles */
+@media (max-width: 375px) {
+	.frameWrapper, .frameWrapper2, .frameWrapper3, .frameWrapper4 {
+		width: 280px !important;
+		height: 300px !important;
+		margin: 0 auto;
+		mix-blend-mode: normal;
+		flex-shrink: 0;
+	}
+	
+	.instanceWrapper {
+		flex-direction: row;
+		gap: 4px;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: 0 5px;
+	}
+	
+	.frameParent4 {
+		flex: 1;
+		max-width: calc(50% - 2px);
+		padding: 3px 4px;
+		gap: 2px;
+		justify-content: center;
+		min-width: 80px;
+		width: auto;
+	}
+	
+	.piperaceaca {
+		font-size: 9px;
+		text-align: center;
+		line-height: 1.1;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	.instanceChild {
+		width: 20px;
+		height: 20px;
+		flex-shrink: 0;
+	}
+	
+	/* Отключаем hover эффекты на очень маленьких экранах */
+	.frameWrapper:hover,
+	.frameWrapper2:hover,
+	.frameWrapper3:hover,
+	.frameWrapper4:hover {
+		transform: none !important;
+		z-index: auto !important;
+		position: relative !important;
+		backdrop-filter: none !important;
+		background-position: center top !important;
+		mix-blend-mode: normal !important;
+		width: 280px !important;
+		height: 300px !important;
+	}
+	
+	/* Отключаем эффекты изменения размера других карточек */
+	.frameContainer:hover .frameWrapper:not(:hover),
+	.frameWrapper:hover ~ .frameWrapper4,
+	.frameWrapper2:hover ~ .frameWrapper4,
+	.frameWrapper3:hover ~ .frameWrapper4,
+	.frameWrapper4:hover ~ .frameWrapper2,
+	.frameWrapper4:hover ~ .frameWrapper3 {
+		width: 280px !important;
+		height: 300px !important;
+		mix-blend-mode: normal !important;
 	}
 }
 .frameParent2 {
@@ -357,9 +738,20 @@
 /* Mobile styles */
 @media (max-width: 768px) {
 	.instanceWrapper {
-		flex-direction: column;
-		gap: 15px;
+		flex-direction: row;
+		gap: 10px;
 		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding: 0 10px;
+	}
+	
+	.frameParent4 {
+		flex: 1;
+		max-width: calc(50% - 5px);
+		padding: 8px 12px;
+		gap: 6px;
+		justify-content: center;
 	}
 }
 .frameParent4 {
@@ -542,6 +934,30 @@
 	gap: 0px;
 }
 
+/* Tablet styles for frameParent6 */
+@media (max-width: 1024px) {
+	.frameParent6 {
+		width: 500px !important;
+		align-items: center;
+	}
+}
+
+/* Mobile styles for frameParent6 */
+@media (max-width: 768px) {
+	.frameParent6 {
+		width: 400px !important;
+		align-items: center;
+	}
+}
+
+/* Small mobile styles for frameParent6 */
+@media (max-width: 480px) {
+	.frameParent6 {
+		width: 350px !important;
+		align-items: center;
+	}
+}
+
 .frameParent7 {
 	align-self: stretch;
 	display: flex;
@@ -569,6 +985,30 @@
 	font-weight: 600;
 	text-align: left;
 	color: #fff;
+}
+
+/* Tablet styles for joinTeam */
+@media (max-width: 1024px) {
+	.joinTeam {
+		font-size: 20px;
+		text-align: center;
+	}
+}
+
+/* Mobile styles for joinTeam */
+@media (max-width: 768px) {
+	.joinTeam {
+		font-size: 18px;
+		text-align: center;
+	}
+}
+
+/* Small mobile styles for joinTeam */
+@media (max-width: 480px) {
+	.joinTeam {
+		font-size: 16px;
+		text-align: center;
+	}
 }
 
 
@@ -609,4 +1049,184 @@
 	letter-spacing: -0.01em;
 	display: inline-block;
 	flex-shrink: 0;
+}
+
+/* Extra small mobile styles (320px) */
+@media (max-width: 320px) {
+	.frameWrapper, .frameWrapper2, .frameWrapper3, .frameWrapper4 {
+		width: 240px !important;
+		height: 280px !important;
+		margin: 0 auto !important;
+		mix-blend-mode: normal !important;
+		flex-shrink: 0 !important;
+		transform: none !important;
+		transition: none !important;
+	}
+	
+	/* Отключаем hover эффекты на очень маленьких экранах */
+	.frameWrapper:hover,
+	.frameWrapper2:hover,
+	.frameWrapper3:hover,
+	.frameWrapper4:hover {
+		transform: none !important;
+		z-index: auto !important;
+		position: relative !important;
+		backdrop-filter: none !important;
+		background-position: center top !important;
+		mix-blend-mode: normal !important;
+		width: 240px !important;
+		height: 280px !important;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08) !important;
+	}
+	
+	/* Отключаем эффекты изменения размера других карточек */
+	.frameContainer:hover .frameWrapper:not(:hover),
+	.frameWrapper:hover ~ .frameWrapper4,
+	.frameWrapper2:hover ~ .frameWrapper4,
+	.frameWrapper3:hover ~ .frameWrapper4,
+	.frameWrapper4:hover ~ .frameWrapper2,
+	.frameWrapper4:hover ~ .frameWrapper3 {
+		width: 240px !important;
+		height: 280px !important;
+		mix-blend-mode: normal !important;
+		transform: none !important;
+	}
+	
+	.orderingForDelivery {
+		font-size: 12px;
+		line-height: 1.0;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+	}
+	
+	.weOfferPotting {
+		font-size: 10px;
+		line-height: 1.1;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+		white-space: normal;
+		word-break: break-word;
+		max-width: 100%;
+	}
+	
+	.weOfferPottingOnInStorePWrapper {
+		padding: 8px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	.weOfferPottingContainer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 6px;
+	}
+	
+	.orderingForDeliveryParent {
+		padding: 10px;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+	
+	.resultsTitle {
+		font-size: 24px !important;
+		text-align: center !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		padding: 0 5px !important;
+		word-wrap: break-word !important;
+		overflow-wrap: break-word !important;
+		hyphens: auto !important;
+		box-sizing: border-box !important;
+		line-height: 1.1 !important;
+	}
+	
+	/* Стили для внутренних элементов карточек команды */
+	.frameParent2, .frameParent5, .frameParent6 {
+		height: 100% !important;
+		display: flex !important;
+		flex-direction: column !important;
+		justify-content: space-between !important;
+		padding: 12px !important;
+		box-sizing: border-box !important;
+	}
+	
+	.frameParent3, .frameParent7 {
+		margin-bottom: 10px !important;
+	}
+	
+	.petFriendlyPlants, .joinTeam {
+		font-size: 14px !important;
+		line-height: 1.2 !important;
+		text-align: center !important;
+		word-wrap: break-word !important;
+		overflow-wrap: break-word !important;
+		hyphens: auto !important;
+	}
+	
+	.lineParent {
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		gap: 10px !important;
+	}
+	
+	.instanceWrapper {
+		display: flex !important;
+		flex-direction: row !important;
+		gap: 8px !important;
+		justify-content: center !important;
+		align-items: center !important;
+		width: 100% !important;
+	}
+	
+	.frameParent4 {
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		gap: 4px !important;
+		padding: 5px !important;
+		background-color: rgba(255, 255, 255, 0.1) !important;
+		border-radius: 8px !important;
+		backdrop-filter: blur(10px) !important;
+	}
+	
+	.instanceChild {
+		width: 30px !important;
+		height: 30px !important;
+		border-radius: 50% !important;
+		object-fit: cover !important;
+	}
+	
+	.piperaceaca {
+		font-size: 10px !important;
+		text-align: center !important;
+		line-height: 1.1 !important;
+		white-space: nowrap !important;
+		overflow: hidden !important;
+		text-overflow: ellipsis !important;
+	}
+	
+	.applyButton {
+		padding: 8px 16px !important;
+		font-size: 12px !important;
+		border-radius: 20px !important;
+		background-color: rgba(255, 255, 255, 0.2) !important;
+		border: 1px solid rgba(255, 255, 255, 0.3) !important;
+		color: #000 !important;
+		text-decoration: none !important;
+		display: inline-block !important;
+		text-align: center !important;
+		transition: none !important;
+	}
+	
+	.applyButton:hover {
+		background-color: rgba(255, 255, 255, 0.3) !important;
+		transform: none !important;
+		box-shadow: none !important;
+	}
 }

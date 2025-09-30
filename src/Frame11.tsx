@@ -42,10 +42,6 @@ const Frame11 = () => {
             </div>
             <div className={styles.calatheaParent}>
               <b className={styles.calathea}>ООО "Барсик"</b>
-              <div className={styles.loremIpsumDolor}>Окулова Наталья Владимировна
-
-Дерматолог, аллерголог. Стаж
-работы - 27 лет.</div>
             </div>
           </div>
         </div>
@@ -65,10 +61,6 @@ const Frame11 = () => {
             </div>
             <div className={styles.calatheaParent}>
               <b className={styles.calathea}>ООО "Интел"</b>
-              <div className={styles.loremIpsumDolor}>Окулова Наталья Владимировна
-
-Дерматолог, аллерголог. Стаж
-работы - 27 лет.</div>
             </div>
           </div>
         </div>
@@ -86,10 +78,6 @@ const Frame11 = () => {
             </div>
             <div className={styles.calatheaParent}>
               <b className={styles.calathea}>ООО "Евро-Продукт-К"</b>
-              <div className={styles.loremIpsumDolor}>Окулова Наталья Владимировна
-
-Дерматолог, аллерголог. Стаж
-работы - 27 лет.</div>
             </div>
           </div>
         </div>
